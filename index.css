@@ -4,7 +4,7 @@
 	color: hsl(0%, 0%, 0%);
 }
 
-body {
+body, hr {
 	margin: 0px;
 }
 
@@ -48,7 +48,7 @@ nav ul {
 	height: 100%;
 }
 
-nav li {
+ul > li {
 	flex-basis: 200px;
 	list-style-type: none;
 	text-align: center;
@@ -62,6 +62,10 @@ h2 {
 	text-decoration: overline;
 }
 
+h2 ~ h3 {
+	font-style: italic;
+}
+
 #MacPic {
 	display: block;
 	margin-left: auto;
@@ -69,16 +73,16 @@ h2 {
 	position: sticky;
 }
 
-.caption {
+img + p {
 	text-align: center;
 }
 
-.stuff {
+[class="stuff"] {
 	display: grid;
 	grid-template-columns: auto auto;
 }
 
-.summary {
+div.summary {
 	grid-row: 2;
 	grid-column: 1 / span 2;
 }
@@ -96,10 +100,6 @@ main {
 
 footer {
 	margin: 0 1em 1em 1em;
-}
-
-hr {
-	margin: 2%;
 }
 
 p {
